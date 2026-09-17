@@ -1,0 +1,24 @@
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: allow-frontend-only
+  namespace: backend
+  labels:
+    app: backend-api
+    tier: api
+    app.kubernetes.io/part-of: cloud-retail
+spec:
+  podSelector:
+    matchLabels:
+      app: backend-api
+  policyTypes:
+    - Ingress
+  ingress:
+    # Allow traffic ONLY from pods in the frontend namespace on port 8000
+    - from:
+        - namespaceSelector:
+            matchLabels:
+              kubernetes.io/metadata.name: frontend
+      ports:
+        - protocol: TCP
+          port: 8000
