@@ -456,11 +456,11 @@ managed node group:
 kubectl -n kube-system scale deployment/karpenter --replicas=0
 ```
 ### ScreenShot
+<img width="1053" height="675" alt="Screenshot From 2026-09-22 10-32-43" src="https://github.com/user-attachments/assets/a090f7ba-b50c-4fe0-9a74-df0f7a6f8bd5" />
 <img width="1344" height="757" alt="Screenshot From 2026-09-22 11-22-02" src="https://github.com/user-attachments/assets/f4b52859-b906-4924-ae4d-701119c22630" />
 <img width="1344" height="757" alt="Screenshot From 2026-09-22 11-48-10" src="https://github.com/user-attachments/assets/d1aec6e0-9651-4726-b518-be46d3ab0cd7" />
 <img width="1344" height="757" alt="Screenshot From 2026-09-22 11-49-08" src="https://github.com/user-attachments/assets/e9c8502b-b951-4c16-be34-eec8b170b71a" />
 <img width="1344" height="757" alt="Screenshot From 2026-09-22 11-50-29" src="https://github.com/user-attachments/assets/9e2b4112-d328-4e64-b587-45340c5647c0" />
-<img width="1053" height="675" alt="Screenshot From 2026-09-22 10-32-43" src="https://github.com/user-attachments/assets/a090f7ba-b50c-4fe0-9a74-df0f7a6f8bd5" />
 
 
 
